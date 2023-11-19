@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my webpage</title>
+    <link rel="stylesheet" href="test.css">
+  </head>
+  <body>
+    <header>
+      <h1>MY GOALS FOR THE YEAR</h1>
+
+      <nav aria-label="primary">
+        <ul>
+          <li>
+            <a href="#html">Learning HTML</a>
+          </li>
+          <li>
+            <a href="#vacation">planing a vacation</a>
+          </li>
+          <li>
+            <a href="#contact">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr>
+    <main>
+      <article id="html">
+        <h2>I'm ready to learn html</h2>
+        <p>This is my first web page</p>
+        <section>
+          <h3>HTML5</h3>
+          <img
+            src="img/html5_logo.png"
+            alt="html5 logo"
+            width="200"
+            height="200"
+          >
+          <figure>
+            <figcaption>An Example of HTML5 Code</figcaption>
+            <p>
+              <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+            </p>
+          </figure>
+        </section>
+        <section>
+          <h3>My daily schedule</h3>
+          <p>Let me tell you how:</p>
+          <ol>
+            <li>...I learn more about web dev.</li>
+            <li>...I plan out my schedule</li>
+            <li>
+              ...I use resources from
+              <abbr title="mozilla developer network">
+                <a href="https://developer.mozilla.org/">MDN</a> </abbr
+              >.
+            </li>
+          </ol>
+          <aside>
+            <details>
+              <summary>
+                Guess the <mark> number of hours</mark> i code per day
+              </summary>
+              <p>
+                i start at <time datetime="06:00">6 am</time> and i write code
+                for 2 hours every morning
+              </p>
+            </details>
+          </aside>
+          <br>
+          <table>
+            <caption>
+              My Daily Schedule
+            </caption>
+            <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Morning</th>
+                <td>
+                  <time datetime="08:00">8am</time>-<time datetime="11:00"
+                    >11am</time>
+                </td>
+
+                <td>Write Code</td>
+              </tr>
+              <tr>
+                <th scope="row">Break</th>
+                <td>
+                  <time datetime="11:00">11am</time>-<time datetime="12:00"
+                    >12pm</time>
+                </td>
+
+                <td>Eat Lunch</td>
+              </tr>
+              <tr>
+                <th scope="row">Afternoon</th>
+                <td>
+                  <time datetime="12:00">12pm</time>-<time datetime="17:00"
+                    >5pm</time>
+                </td>
+
+                <td>Study For Another Courses</td>
+              </tr>
+              <tr>
+                <th scope="row">Evening</th>
+                <td rowspan="2">
+                  All Other <br>
+                  Times</td>
+                <td>Free Time</td>
+              </tr>
+              <tr>
+                <th scope="row">Night</th>
+                <td>Sleep</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">
+                  This Is What i Do Everyday.. Eat, Code, Study, Have Funs ..and Sleep!
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+      </article>
+
+      <hr>
+
+      <article id="vacation">
+        <h2>I am also planing a vacation</h2>
+        <p>I've been working hard and <em>really need a getaway</em>.</p>
+        <p>
+          I live in <abbr title="california">CA</abbr> so i'd love to visit the
+          beach.
+        </p>
+        <section>
+          <h3>Places i'd like to visit</h3>
+          <ul>
+            <li>
+              <p>I've heard good things about BURJ KHALIFA</p>
+              <figure>
+                <img
+                  src="img/burj-khalifa.jpg"
+                  alt="burj-khalifa"
+                  width="300"
+                  height="210"
+                  loading="lazy"
+                  title="Tallest Building in the World"
+                >
+                <figcaption>Burj Khalifa Gataway</figcaption>
+              </figure>
+            </li>
+            <li>
+              <p>I've heard good things about giong here:</p>
+              <address>
+                Crescent Rd-The Palm Jumeirah-Dubai-United Arab Emirate
+              </address>
+              <figure>
+                <img
+                  src="img/the_palm_jumeirah.jpeg"
+                  alt="The Palm Jumeirah vacation"
+                  width="300"
+                  height="220"
+                  loading="lazy"
+                  title="This View is Awesome"
+                >
+                <figcaption>The Palm Jumeirah</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+
+        <!-- todo; add more places -->
+        <section>
+          <h3>places I Want To Avoid</h3>
+          <dl>
+            <dt>Mount Washington</dt>
+            <dd>USA</dd>
+
+            <dt>Half Dome, Yosemite National Park</dt>
+            <dd>California</dd>
+
+            <dt>Death Valley</dt>
+            <dd>California</dd>
+
+            <dt>Acapulco</dt>
+            <dd>Mexico</dd>
+
+            <dt>Cliffs Of Moher</dt>
+            <dd>Ireland</dd>
+
+            <dt>Vanuatu</dt>
+            <dd>Pacific Ocean</dd>
+          </dl>
+        </section>
+      </article>
+
+      <hr>
+      <article id="contact">
+        <h2>Contact Me</h2>
+        <p>I'd really like to hear from you!</p>
+
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Personal Info</legend>
+          <p>
+          <label for="firstName">First Name:</label>
+          <input type="text" name="firstName" 
+          id="firstName" placeholder="FirstName">
+        </p>
+
+        <p>
+          <label for="lastname">Last Name:</label>
+          <input type="text" name="lastname" 
+          id="lastname" placeholder="lastname">
+        </p>
+       <p>
+          <label for="Email">Email:</label>
+          <input type="text" name="Email" 
+          id="Email" placeholder="Email">
+        </p>
+       <p>
+          <label for="phone">Phone:</label>
+          <input type="tel" name="phone" 
+          id="phone" placeholder="1234567890">
+        </p>
+       <p>
+          <label for="decade">Favorite Decade:</label>
+          <input type="number" name="decade" 
+          id="decade" min="1950" max="2020" step="10" value="1980">
+        </p>
+
+        <p>
+          <label for="Coffee">Favorite Coffee</label>
+          <select name="coffee" id="Coffee" multiple size="5">
+          <option value="regular coffee">Regular Coffee</option>
+          <option value="iced coffee">Iced Coffee</option>
+          <option value="latte">Latte</option>
+          <option value="cappuccino">Cappuccino</option>
+          <option value="cortado">Cortado</option>
+          <option value="americano">Americano</option>
+          <option value="other">Other</option>
+        </select>
+        </p>
+        
+       <!--  <p>
+          <label for="coffee">Favorite Coffee:</label>
+          <input type="text" name="coffee" id="coffee" list="coffee-list">
+          <datalist id="coffee-list">
+            <option value="coffee">
+            <option value="latte">
+            <option value="espresso">
+            <option value="cortado">
+            <option value="americano">
+            <option value="other">
+          </datalist>
+        </p> -->
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>What is your favorite food?</legend>
+        <p>
+          <input type="radio" name="food"
+          id="tacos" value="tacos">
+          <label for="tacos">Tacos</label>
+        </p>
+        <p>
+          <input type="radio" name="food"
+          id="pizza" value="pizza">
+          <label for="pizza">pizza</label>
+        </p>
+        <p>
+          <input type="radio" name="food"
+          id="other" value="other">
+          <label for="other">other</label>
+        </p>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Do you have pet?</legend>
+        <p>
+          <input type="checkbox" name="pets" id="dog" value="dog">
+          <label for="dog">Dog</label>
+        </p>
+        <p>
+          <input type="checkbox" name="pets" id="cat" value="cat">
+          <label for="cat">Cat</label>
+        </p>
+        <p>
+          <input type="checkbox" name="pets" id="fish" value="fish">
+          <label for="fish">Fish</label>
+        </p>
+        <p>
+          <input type="checkbox" name="pets" id="otherpet" value="otherpet">
+          <label for="otherpet">Other</label>
+        </p>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Send me a Note</legend>
+        <label for="message">Your Message:</label>
+        <br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+      </fieldset>
+      <br>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+        </form>
+      </article>
+    </main>
+
+    <hr>
+    <footer>
+      <p>&lt;&lt;&lt; &copy; <a href="index.html">HOLA</a> &gt; &gt; &gt;</p>
+
+      <p>
+        <a href="#">Back to Top</a>
+      </p>
+    </footer>
+  </body>
+</html>
